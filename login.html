@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Grants</title>
+        <title>Login</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -186,7 +186,7 @@
     
             <ul class="d-flex justify-content-end list-unstyled m-0">
               <li>
-                <a href="login.html" class="rounded-circle bg-light p-2 mx-1">
+                <a href="#" class="rounded-circle bg-light p-2 mx-1">
                   <svg width="24" height="24" viewBox="0 0 24 24"><use xlink:href="#user"></use></svg>
                 </a>
               </li>
@@ -306,22 +306,21 @@
     </header>
     
     <!--Body-->
-    <section class="py-5">
+      <section class="py-5">
       <div class="container-fluid">
-        <h2 class="section-title">Grants for Small Businesses</h2>
-        <p>Learn about and apply for government-backed grants for small businesses and entrepreneurs.</p>
-        <div class="row">
-          <div class="col-md-6">
-            <h3>Available Grants</h3>
-            <p>View the available small business grants and check your eligibility.</p>
-            <a href="#" class="btn btn-outline-dark">See Available Grants</a>
+        <h2 class="section-title">Login</h2>
+        <form action="#" method="post">
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
           </div>
-          <div class="col-md-6">
-            <h3>Success Stories</h3>
-            <p>Read about successful businesses that have benefitted from our grants program.</p>
-            <a href="#" class="btn btn-outline-dark">Read Stories</a>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password">
           </div>
-        </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <p class="mt-3">Don't have an account? <a href="register.html">Register here</a>.</p>
+        </form>
       </div>
     </section>
 
