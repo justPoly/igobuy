@@ -233,36 +233,36 @@
 
                 <div class="offcanvas-body">
               
-                  <select class="filter-categories border-0 mb-0 me-5">
+                  <select class="filter-categories border-0 mb-0 me-5" id="local-gov-select" onchange="redirectToPage()">
                     <option>Shop by Local Governments</option>
-                    <option value="local-governments/aniocha-north.html"></optionvalue>Aniocha North</option>
-                    <option>Aniocha South</option>
-                    <option>Bomadi</option>
-                    <option>Burutu</option>
-                    <option>Ethiope East</option>
-                    <option>Ethiope West</option>
-                    <option>Ika North East</option>
-                    <option>Ika South</option>
-                    <option>Isoko North</option>
-                    <option>Isoko South</option>
-                    <option>Ndokwa East</option>
-                    <option>Ndokwa West</option>
-                    <option>Okpe</option>
-                    <option>Oshimili North</option>
-                    <option>Oshimili South</option>
-                    <option>Patani</option>
-                    <option>Sapele</option>
-                    <option>Udu</option>
-                    <option>Ughelli North</option>
-                    <option>Ughelli South</option>
-                    <option>Ukwuani</option>
-                    <option>Uvwie</option>
-                    <option>Warri North</option>
-                    <option>Warri South</option>
-                    <option>Warri South West</option>                    
-                  </select>
-                  
-                  <script>
+                    <option value="local-governments/aniocha-north.html">Aniocha North</option>
+                    <option value="local-governments/aniocha-south.html">Aniocha South</option>
+                    <option value="local-governments/bomadi.html">Bomadi</option>
+                    <option value="local-governments/burutu.html">Burutu</option>
+                    <option value="local-governments/ethiope-east.html">Ethiope East</option>
+                    <option value="local-governments/ethiope-west.html">Ethiope West</option>
+                    <option value="local-governments/ika-north-east.html">Ika North East</option>
+                    <option value="local-governments/ika-south.html">Ika South</option>
+                    <option value="local-governments/isoko-north.html">Isoko North</option>
+                    <option value="local-governments/isoko-south.html">Isoko South</option>
+                    <option value="local-governments/ndokwa-east.html">Ndokwa East</option>
+                    <option value="local-governments/ndokwa-west.html">Ndokwa West</option>
+                    <option value="local-governments/okpe.html">Okpe</option>
+                    <option value="local-governments/oshimili-north.html">Oshimili North</option>
+                    <option value="local-governments/oshimili-south.html">Oshimili South</option>
+                    <option value="local-governments/patani.html">Patani</option>
+                    <option value="local-governments/sapele.html">Sapele</option>
+                    <option value="local-governments/udu.html">Udu</option>
+                    <option value="local-governments/ughelli-north.html">Ughelli North</option>
+                    <option value="local-governments/ughelli-south.html">Ughelli South</option>
+                    <option value="local-governments/ukwuani.html">Ukwuani</option>
+                    <option value="local-governments/uvwie.html">Uvwie</option>
+                    <option value="local-governments/warri-north.html">Warri North</option>
+                    <option value="local-governments/warri-south.html">Warri South</option>
+                    <option value="local-governments/warri-south-west.html">Warri South West</option>
+                </select>
+                
+                <script>
                     function redirectToPage() {
                         var select = document.getElementById("local-gov-select");
                         var selectedValue = select.value;
@@ -270,8 +270,8 @@
                             window.location.href = selectedValue;
                         }
                     }
-                  </script>
-
+                </script>
+                
 
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                     <li class="nav-item active">
