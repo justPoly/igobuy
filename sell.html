@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Marketplace</title>
+        <title>Sell Your Product</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -305,33 +305,41 @@
       </div>
     </header>
     
-    <section class="py-5">
-      <div class="container-fluid">
-        <h2 class="section-title">Marketplace</h2>
-        <p>Browse products from rural marketers connecting to urban wholesalers.</p>
-        <div class="row">
-          <!-- Example of product categories -->
-          <div class="col-md-4">
-            <a href="#" class="nav-link category-item">
-              <img src="images/icon-vegetables-broccoli.png" alt="Category Thumbnail">
-              <h3 class="category-title">Agricultural Products</h3>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="#" class="nav-link category-item">
-              <img src="images/icon-bread-baguette.png" alt="Category Thumbnail">
-              <h3 class="category-title">Craft & Hand-Made Goods</h3>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="#" class="nav-link category-item">
-              <img src="images/icon-wine-glass-bottle.png" alt="Category Thumbnail">
-              <h3 class="category-title">Wholesale Opportunities</h3>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Form Section -->
+<section class="form-section">
+    <div class="form-container">
+        <h2 class="section-title">Sell Your Products</h2>
+        <p class="text-center">Fill out the form below to list your products on the marketplace.</p>
+        <form action="#" method="post">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Product Name</label>
+                <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
+            </div>
+            <div class="mb-3">
+                <label for="productDescription" class="form-label">Product Description</label>
+                <textarea class="form-control" id="productDescription" rows="4" placeholder="Describe your product" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="productCategory" class="form-label">Category</label>
+                <select class="form-control" id="productCategory" required>
+                    <option>Select Category</option>
+                    <option>Agriculture</option>
+                    <option>Handicrafts</option>
+                    <option>Wholesale</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Price (₦)</label>
+                <input type="number" class="form-control" id="productPrice" placeholder="Enter price" required>
+            </div>
+            <div class="mb-3">
+                <label for="productImage" class="form-label">Upload Product Image</label>
+                <input type="file" class="form-control" id="productImage" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit Product</button>
+        </form>
+    </div>
+</section>
 
     <!-- Footer (reuse the footer code from index.html) -->
     <footer class="py-5">

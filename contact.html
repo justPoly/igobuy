@@ -295,7 +295,7 @@
     
             </nav>
             <div class="d-none d-lg-block"> 
-              <a href="https://templatesjungle.gumroad.com/l/foodmart-bootstrap-html-template" target="_blank" class="nav-link btn-coupon-code">
+              <a href="sell.html" target="_blank" class="nav-link btn-coupon-code">
                 <button class="ms-2 btn" style="background-color: orange; color: white; border: none; width: 150px;">SELL</button>
               </a>
             </div>
@@ -306,27 +306,29 @@
     </header>
     
     <!--Body-->
-    <section class="py-5">
-        <div class="container-fluid">
-          <h2 class="section-title">Contact Us</h2>
-          <p>If you have any questions, please reach out to us using the form below or by contacting the relevant department.</p>
-          <form action="#" method="post">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
+    <section class="py-5 contact-section d-flex justify-content-center">
+      <div class="container-fluid d-flex flex-column align-items-center"> <!-- Center the form within the container -->
+          <div class="text-center mb-4">
+              <h2 class="section-title">Contact Us</h2>
+              <p>If you have any questions, please reach out to us using the form below or by contacting the relevant department.</p>
+          </div>
+          <form action="#" method="post" class="w-100" style="max-width: 600px;"> <!-- Set a max-width for the form -->
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
           </form>
-        </div>
-      </section>
+      </div>
+  </section>
 
     <!-- Footer (reuse the footer code from index.html) -->
     <footer class="py-5">

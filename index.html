@@ -235,7 +235,7 @@
               
                   <select class="filter-categories border-0 mb-0 me-5">
                     <option>Shop by Local Governments</option>
-                    <option>Aniocha North</option>
+                    <option value="local-governments/aniocha-north.html"></optionvalue>Aniocha North</option>
                     <option>Aniocha South</option>
                     <option>Bomadi</option>
                     <option>Burutu</option>
@@ -261,7 +261,18 @@
                     <option>Warri South</option>
                     <option>Warri South West</option>                    
                   </select>
-              
+                  
+                  <script>
+                    function redirectToPage() {
+                        var select = document.getElementById("local-gov-select");
+                        var selectedValue = select.value;
+                        if (selectedValue) {
+                            window.location.href = selectedValue;
+                        }
+                    }
+                  </script>
+
+
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                     <li class="nav-item active">
                       <a href="index.html" class="nav-link">Home</a>
@@ -293,7 +304,7 @@
 
             </nav>
             <div class="d-none d-lg-block"> 
-              <a href="https://templatesjungle.gumroad.com/l/foodmart-bootstrap-html-template" target="_blank" class="nav-link btn-coupon-code">
+              <a href="sell.html" target="_blank" class="nav-link btn-coupon-code">
                 <button class="ms-2 btn" style="background-color: orange; color: white; border: none; width: 150px;">SELL</button>
               </a>
             </div>
