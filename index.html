@@ -233,7 +233,7 @@
                 <div class="offcanvas-body">
               
                   <select class="filter-categories border-0 mb-0 me-5" id="local-gov-select" onchange="redirectToPage()">
-                    <option value="">Shop by Local Governments</option>
+                    <option>Select Local Government</option>
                     <option value="aniocha-north.html">Aniocha North</option>
                     <option value="aniocha-south.html">Aniocha South</option>
                     <option value="bomadi.html">Bomadi</option>
@@ -261,29 +261,18 @@
                     <option value="warri-south-west.html">Warri South West</option>
                 </select>
                 
+                
                 <script>
                   function redirectToPage() {
                       var select = document.getElementById("local-gov-select");
                       var selectedValue = select.value;
               
-                      if (selectedValue) {
-                          // Get the current URL
-                          var currentUrl = window.location.href;
-                          
-                          // Check if the current URL contains "/local-governments/"
-                          if (currentUrl.includes("/local-governments/")) {
-                              // Remove the existing "/local-governments/" segment and everything after it
-                              var baseUrl = currentUrl.split("/local-governments/")[0];
-                              
-                              // Construct the new URL by appending the selected value to "/local-governments/"
-                              var newUrl = baseUrl + "/local-governments/" + selectedValue;
-                              
-                              // Navigate to the new URL
-                              window.location.href = newUrl;
-                          } else {
-                              // If "/local-governments/" is not in the URL, just append the selected value
-                              window.location.href = window.location.origin + "/local-governments/" + selectedValue;
-                          }
+                      if (selectedValue && selectedValue !== "Select Local Government") {
+                          // Construct the URL by prepending the correct path
+                          var newUrl = "/local-governments/" + selectedValue;
+              
+                          // Navigate to the new URL
+                          window.location.href = newUrl;
                       }
                   }
               </script>
