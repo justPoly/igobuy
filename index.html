@@ -233,67 +233,69 @@
                 <div class="offcanvas-body">
               
                   <select class="filter-categories border-0 mb-0 me-5" id="local-gov-select" onchange="redirectToPage()">
-                    <option>Shop by Local Governments</option>
-                    <option value="local-governments/aniocha-north.html">Aniocha North</option>
-                    <option value="local-governments/aniocha-south.html">Aniocha South</option>
-                    <option value="local-governments/bomadi.html">Bomadi</option>
-                    <option value="local-governments/burutu.html">Burutu</option>
-                    <option value="local-governments/ethiope-east.html">Ethiope East</option>
-                    <option value="local-governments/ethiope-west.html">Ethiope West</option>
-                    <option value="local-governments/ika-north-east.html">Ika North East</option>
-                    <option value="local-governments/ika-south.html">Ika South</option>
-                    <option value="local-governments/isoko-north.html">Isoko North</option>
-                    <option value="local-governments/isoko-south.html">Isoko South</option>
-                    <option value="local-governments/ndokwa-east.html">Ndokwa East</option>
-                    <option value="local-governments/ndokwa-west.html">Ndokwa West</option>
-                    <option value="local-governments/okpe.html">Okpe</option>
-                    <option value="local-governments/oshimili-north.html">Oshimili North</option>
-                    <option value="local-governments/oshimili-south.html">Oshimili South</option>
-                    <option value="local-governments/patani.html">Patani</option>
-                    <option value="local-governments/sapele.html">Sapele</option>
-                    <option value="local-governments/udu.html">Udu</option>
-                    <option value="local-governments/ughelli-north.html">Ughelli North</option>
-                    <option value="local-governments/ughelli-south.html">Ughelli South</option>
-                    <option value="local-governments/ukwuani.html">Ukwuani</option>
-                    <option value="local-governments/uvwie.html">Uvwie</option>
-                    <option value="local-governments/warri-north.html">Warri North</option>
-                    <option value="local-governments/warri-south.html">Warri South</option>
-                    <option value="local-governments/warri-south-west.html">Warri South West</option>
+                    <option value="">Shop by Local Governments</option>
+                    <option value="aniocha-north.html">Aniocha North</option>
+                    <option value="aniocha-south.html">Aniocha South</option>
+                    <option value="bomadi.html">Bomadi</option>
+                    <option value="burutu.html">Burutu</option>
+                    <option value="ethiope-east.html">Ethiope East</option>
+                    <option value="ethiope-west.html">Ethiope West</option>
+                    <option value="ika-north-east.html">Ika North East</option>
+                    <option value="ika-south.html">Ika South</option>
+                    <option value="isoko-north.html">Isoko North</option>
+                    <option value="isoko-south.html">Isoko South</option>
+                    <option value="ndokwa-east.html">Ndokwa East</option>
+                    <option value="ndokwa-west.html">Ndokwa West</option>
+                    <option value="okpe.html">Okpe</option>
+                    <option value="oshimili-north.html">Oshimili North</option>
+                    <option value="oshimili-south.html">Oshimili South</option>
+                    <option value="patani.html">Patani</option>
+                    <option value="sapele.html">Sapele</option>
+                    <option value="udu.html">Udu</option>
+                    <option value="ughelli-north.html">Ughelli North</option>
+                    <option value="ughelli-south.html">Ughelli South</option>
+                    <option value="ukwuani.html">Ukwuani</option>
+                    <option value="uvwie.html">Uvwie</option>
+                    <option value="warri-north.html">Warri North</option>
+                    <option value="warri-south.html">Warri South</option>
+                    <option value="warri-south-west.html">Warri South West</option>
                 </select>
                 
                 <script>
                     function redirectToPage() {
                         var select = document.getElementById("local-gov-select");
                         var selectedValue = select.value;
+                        // Check if an option is selected and redirect accordingly
                         if (selectedValue) {
-                            window.location.href = selectedValue;
+                            window.location.href = 'local-governments/' + selectedValue; // Prepend the base path
                         }
                     }
                 </script>
                 
+                
 
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
                     <li class="nav-item active">
-                      <a href="https://deltamarkethub.ng/index.html" class="nav-link">Home</a>
+                      <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="https://deltamarkethub.ng/marketplace.html" class="nav-link">Marketplace</a>
+                      <a href="marketplace.html" class="nav-link">Marketplace</a>
                     </li>
                     <li class="nav-item">
-                      <a href="https://deltamarkethub.ng/skills.html" class="nav-link">Skill Acquisition</a>
+                      <a href="skills.html" class="nav-link">Skill Acquisition</a>
                     </li>
                     <li class="nav-item">
-                      <a href="https://deltamarkethub.ng/grants.html" class="nav-link">Grants</a>
+                      <a href="grants.html" class="nav-link">Grants</a>
                     </li>
             
                     <li class="nav-item">
-                      <a href="https://deltamarkethub.ng/about.html" class="nav-link">About</a>
+                      <a href="about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                      <a href="https://deltamarkethub.ng/contact.html" class="nav-link">Contact</a>
+                      <a href="contact.html" class="nav-link">Contact</a>
                     </li>
                     <li class="nav-item">
-                      <a href="https://deltamarkethub.ng/news.html" class="nav-link">News</a>
+                      <a href="news.html" class="nav-link">News</a>
                     </li>
                   </ul>
                 
@@ -303,7 +305,7 @@
 
             </nav>
             <div class="d-none d-lg-block"> 
-              <a href="https://deltamarkethub.ng/sell.html" target="_blank" class="nav-link btn-coupon-code">
+              <a href="sell.html" target="_blank" class="nav-link btn-coupon-code">
                 <button class="ms-2 btn" style="background-color: orange; color: white; border: none; width: 150px;">SELL</button>
               </a>
             </div>
