@@ -262,17 +262,32 @@
                 </select>
                 
                 <script>
-                    function redirectToPage() {
-                        var select = document.getElementById("local-gov-select");
-                        var selectedValue = select.value;
-                
-                        // Ensure an option is selected and then build the absolute URL
-                        if (selectedValue) {
-                            var baseURL = window.location.origin; // Get the base URL (e.g., https://deltamarkethub.ng)
-                            window.location.href = baseURL + "/local-governments/" + selectedValue;
-                        }
-                    }
-                </script>
+                  function redirectToPage() {
+                      var select = document.getElementById("local-gov-select");
+                      var selectedValue = select.value;
+              
+                      if (selectedValue) {
+                          // Get the current URL
+                          var currentUrl = window.location.href;
+                          
+                          // Check if the current URL contains "/local-governments/"
+                          if (currentUrl.includes("/local-governments/")) {
+                              // Remove the existing "/local-governments/" segment and everything after it
+                              var baseUrl = currentUrl.split("/local-governments/")[0];
+                              
+                              // Construct the new URL by appending the selected value to "/local-governments/"
+                              var newUrl = baseUrl + "/local-governments/" + selectedValue;
+                              
+                              // Navigate to the new URL
+                              window.location.href = newUrl;
+                          } else {
+                              // If "/local-governments/" is not in the URL, just append the selected value
+                              window.location.href = window.location.origin + "/local-governments/" + selectedValue;
+                          }
+                      }
+                  }
+              </script>
+              
                 
 
                   <ul class="navbar-nav justify-content-end menu-list list-unstyled d-flex gap-md-3 mb-0">
