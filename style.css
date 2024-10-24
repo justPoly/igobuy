@@ -695,6 +695,44 @@ h1,h2,h3,h4,h5,h6 {
   transform: scale(1.05);
 }
 
+/* Responsive Skill Area*/
+.center-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Ensures items wrap on smaller screens */
+}
+
+.responsive-rectangle {
+  width: 100%; /* Full width */
+  max-width: 400px; /* Optional: Set a max width for larger screens */
+  aspect-ratio: 16 / 9; /* Maintains a 16:9 aspect ratio */
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.responsive-rectangle img {
+  width: 100%; /* Make the image take up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure no spacing around the image */
+  object-fit: cover; /* Cover the entire container without distortion */
+  border-radius: 8px; /* Optional: Rounded corners for aesthetics */
+}
+
+.category-item {
+  text-align: center; /* Center the text below the image */
+  display: block;
+  text-decoration: none; /* Remove default link underline */
+  color: inherit; /* Inherit the color for consistency */
+}
+
+.category-title {
+  margin-top: 10px; /* Add some space between the image and the title */
+  font-size: 1.2rem; /* Adjust the font size */
+}
+
+
 /* top text color */
 .special-font-color {
   color: #ffffff;
