@@ -681,6 +681,42 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 100%;
   width: 250px;
 }
+/* product image */
+.tab-image {
+  width: 100%; /* Make the image fill the container */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Cover the area while preserving aspect ratio */
+  border-radius: 8px; /* Optional: round the corners */
+  transition: transform 0.3s ease; /* Optional: smooth scaling on hover */
+}
+
+/* Optional: Hover effect to scale the image slightly */
+.tab-image:hover {
+  transform: scale(1.05);
+}
+
+/* text color */
+.banner-ad {
+  color: white; /* Set text color to white */
+}
+
+.banner-title {
+  color: white; /* Ensure the banner title is white */
+}
+
+.categories {
+  color: white; /* Ensure the category label is white */
+}
+
+.nav-link {
+  color: white; /* Ensure the nav link text is white */
+}
+
+/* Optional: Change the nav-link color on hover for better visibility */
+.nav-link:hover {
+  color: #e0e0e0; /* Light gray on hover for contrast */
+}
+
 
 /* floating image */
 .image-float {
