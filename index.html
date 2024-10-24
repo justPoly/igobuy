@@ -234,32 +234,42 @@
               
                   <select class="filter-categories border-0 mb-0 me-5" id="local-gov-select" onchange="redirectToPage()">
                     <option>Shop by Local Governments</option>
-                    <option value="local-governments/aniocha-north.html">Aniocha North</option>
-                    <option value="local-governments/aniocha-south.html">Aniocha South</option>
-                    <option value="local-governments/bomadi.html">Bomadi</option>
-                    <option value="local-governments/burutu.html">Burutu</option>
-                    <option value="local-governments/ethiope-east.html">Ethiope East</option>
-                    <option value="local-governments/ethiope-west.html">Ethiope West</option>
-                    <option value="local-governments/ika-north-east.html">Ika North East</option>
-                    <option value="local-governments/ika-south.html">Ika South</option>
-                    <option value="local-governments/isoko-north.html">Isoko North</option>
-                    <option value="local-governments/isoko-south.html">Isoko South</option>
-                    <option value="local-governments/ndokwa-east.html">Ndokwa East</option>
-                    <option value="local-governments/ndokwa-west.html">Ndokwa West</option>
-                    <option value="local-governments/okpe.html">Okpe</option>
-                    <option value="local-governments/oshimili-north.html">Oshimili North</option>
-                    <option value="local-governments/oshimili-south.html">Oshimili South</option>
-                    <option value="local-governments/patani.html">Patani</option>
-                    <option value="local-governments/sapele.html">Sapele</option>
-                    <option value="local-governments/udu.html">Udu</option>
-                    <option value="local-governments/ughelli-north.html">Ughelli North</option>
-                    <option value="local-governments/ughelli-south.html">Ughelli South</option>
-                    <option value="local-governments/ukwuani.html">Ukwuani</option>
-                    <option value="local-governments/uvwie.html">Uvwie</option>
-                    <option value="local-governments/warri-north.html">Warri North</option>
-                    <option value="local-governments/warri-south.html">Warri South</option>
-                    <option value="local-governments/warri-south-west.html">Warri South West</option>
+                    <option value="aniocha-north.html">Aniocha North</option>
+                    <option value="aniocha-south.html">Aniocha South</option>
+                    <option value="bomadi.html">Bomadi</option>
+                    <option value="burutu.html">Burutu</option>
+                    <option value="ethiope-east.html">Ethiope East</option>
+                    <option value="ethiope-west.html">Ethiope West</option>
+                    <option value="ika-north-east.html">Ika North East</option>
+                    <option value="ika-south.html">Ika South</option>
+                    <option value="isoko-north.html">Isoko North</option>
+                    <option value="isoko-south.html">Isoko South</option>
+                    <option value="ndokwa-east.html">Ndokwa East</option>
+                    <option value="ndokwa-west.html">Ndokwa West</option>
+                    <option value="okpe.html">Okpe</option>
+                    <option value="oshimili-north.html">Oshimili North</option>
+                    <option value="oshimili-south.html">Oshimili South</option>
+                    <option value="patani.html">Patani</option>
+                    <option value="sapele.html">Sapele</option>
+                    <option value="udu.html">Udu</option>
+                    <option value="ughelli-north.html">Ughelli North</option>
+                    <option value="ughelli-south.html">Ughelli South</option>
+                    <option value="ukwuani.html">Ukwuani</option>
+                    <option value="uvwie.html">Uvwie</option>
+                    <option value="warri-north.html">Warri North</option>
+                    <option value="warri-south.html">Warri South</option>
+                    <option value="warri-south-west.html">Warri South West</option>
                 </select>
+                
+                <script>
+                    function redirectToPage() {
+                        var select = document.getElementById("local-gov-select");
+                        var selectedValue = select.value;
+                        if (selectedValue) {
+                            window.location.href = selectedValue;
+                        }
+                    }
+                </script>
                 
                 <script>
                     function redirectToPage() {
@@ -1395,13 +1405,13 @@
                   <span class="badge bg-success position-absolute m-3">-15%</span>
                   <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                   <figure>
-                    <a href="single-product.html" title="Product Title">
-                      <img src="images/thumb-tomatoes.png"  class="tab-image">
+                    <a href="3" title="Product Title">
+                      <img src="images/old-layer-chicken.jpg"  class="tab-image">
                     </a>
                   </figure>
-                  <h3>Sunstar Fresh Melon Juice</h3>
+                  <h3>Old Layer</h3>
                   <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                  <span class="price">₦18.00</span>
+                  <span class="price">₦18,500.00</span>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="input-group product-qty">
                         <span class="input-group-btn">
@@ -1424,13 +1434,13 @@
                   <span class="badge bg-success position-absolute m-3">-15%</span>
                   <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                   <figure>
-                    <a href="single-product.html" title="Product Title">
-                      <img src="images/thumb-tomatoketchup.png"  class="tab-image">
+                    <a href="#" title="Product Title">
+                      <img src="images/traditional-fibric.jpeg"  class="tab-image">
                     </a>
                   </figure>
-                  <h3>Sunstar Fresh Melon Juice</h3>
+                  <h3>Fabrics</h3>
                   <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                  <span class="price">₦18.00</span>
+                  <span class="price">₦1,400.00</span>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="input-group product-qty">
                         <span class="input-group-btn">
@@ -1453,13 +1463,13 @@
                   <span class="badge bg-success position-absolute m-3">-15%</span>
                   <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                   <figure>
-                    <a href="single-product.html" title="Product Title">
-                      <img src="images/thumb-bananas.png"  class="tab-image">
+                    <a href="#" title="Product Title">
+                      <img src="images/palm-oil.jpg"  class="tab-image">
                     </a>
                   </figure>
-                  <h3>Sunstar Fresh Melon Juice</h3>
+                  <h3>Palm Oil</h3>
                   <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                  <span class="price">₦18.00</span>
+                  <span class="price">₦18,000.00</span>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="input-group product-qty">
                         <span class="input-group-btn">
@@ -1482,13 +1492,13 @@
                   <span class="badge bg-success position-absolute m-3">-15%</span>
                   <a href="#" class="btn-wishlist"><svg width="24" height="24"><use xlink:href="#heart"></use></svg></a>
                   <figure>
-                    <a href="single-product.html" title="Product Title">
-                      <img src="images/thumb-bananas.png"  class="tab-image">
+                    <a href="#" title="Product Title">
+                      <img src="images/Sauce-pot.jpg"  class="tab-image">
                     </a>
                   </figure>
-                  <h3>Sunstar Fresh Melon Juice</h3>
+                  <h3>Sauce Pot</h3>
                   <span class="qty">1 Unit</span><span class="rating"><svg width="24" height="24" class="text-primary"><use xlink:href="#star-solid"></use></svg> 4.5</span>
-                  <span class="price">₦18.00</span>
+                  <span class="price">₦2,000.00</span>
                   <div class="d-flex align-items-center justify-content-between">
                     <div class="input-group product-qty">
                         <span class="input-group-btn">
