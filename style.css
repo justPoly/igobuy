@@ -695,8 +695,14 @@ h1,h2,h3,h4,h5,h6 {
   transform: scale(1.05);
 }
 
-/* text color */
+/* top text color */
+.special-font-color {
+  color: #ffffff;
+}
 
+.banner-ad .banner-content .sale {
+  color: #ffffff;
+}
 
 /* floating image */
 .image-float {
