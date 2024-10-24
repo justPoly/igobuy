@@ -650,6 +650,12 @@ h1,h2,h3,h4,h5,h6 {
   min-width: 130px;
 }
 
+/* header */
+.img-fluid {
+  max-width: 100%;
+  width: 250px;
+}
+
 /* floating image */
 .image-float {
   margin-top: -140px;
@@ -661,49 +667,55 @@ h1,h2,h3,h4,h5,h6 {
   width: 100%; /* Ensures the div takes full width */
 }
 
-        /* Centering the form on the screen */
-        .form-section {
-          height: calc(100vh - 160px); /* Full viewport height minus header and footer */
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          margin-top: 200px; /* Adjust this value based on your nav header height */
-          margin-bottom: 200px; /* Adjust this value based on your footer height */
-      }
+.footer-img {
+  width: 200px; /* Set the width you want */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure image fits within footer */
+}
 
-      .form-container {
-          background-color: #f8f9fa;
-          padding: 2rem;
-          border-radius: 10px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          max-width: 600px; /* Limits the form width */
-          width: 100%; /* Ensures form takes up full width up to 600px */
-      }
+/* Centering the form on the screen */
+.form-section {
+    height: calc(100vh - 160px); /* Full viewport height minus header and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px; /* Adjust this value based on your nav header height */
+    margin-bottom: 200px; /* Adjust this value based on your footer height */
+}
 
-      .section-title {
-          font-size: 2rem;
-          font-weight: bold;
-          text-align: center;
-          margin-bottom: 1rem;
-      }
+.form-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Limits the form width */
+    width: 100%; /* Ensures form takes up full width up to 600px */
+}
 
-      @media (max-width: 768px) {
-          .form-container {
-              padding: 1.5rem;
-          }
-          .section-title {
-              font-size: 1.5rem;
-          }
-      }
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-      @media (max-width: 576px) {
-          .form-container {
-              padding: 1rem;
-          }
-          .section-title {
-              font-size: 1.25rem;
-          }
-      }
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        padding: 1rem;
+    }
+    .section-title {
+        font-size: 1.25rem;
+    }
+}
 
 @media screen and (max-width:991px) {
   .image-float {
