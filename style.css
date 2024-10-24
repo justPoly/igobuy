@@ -650,6 +650,32 @@ h1,h2,h3,h4,h5,h6 {
   min-width: 130px;
 }
 
+/* login */
+/* Custom background color */
+.custom-bg {
+  background-color: #ffffff; /* White background for the form */ 
+  min-height: 100vh; /* Make the section fill the viewport height */
+}
+
+/* Form container styling */
+.bg-white {
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+/* Optional padding and shadow for the form container */
+.p-4 {
+  padding: 1.5rem; /* Add padding */
+}
+
+.rounded {
+  border-radius: 8px; /* Rounded corners */
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+
 /* header */
 .img-fluid {
   max-width: 100%;
